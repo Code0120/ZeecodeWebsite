@@ -37,7 +37,17 @@
                 </div>
 
                 <!-- Download Button -->
-                <a href="Cells War Android 1.0 Beta.zip" class="download-btn">Download For Android</a>
+                <button onclick="downloadGame()">Download For Android</button>
+
+                <script>
+                function downloadGame() {
+                gtag('event', 'download_game', {
+                'file_name': 'Cells War Android 1.0 Beta.zip'
+                });
+
+                window.location.href = "Cells War Android 1.0 Beta.zip";
+                }
+                </script>
             </div>
 
         </div>
@@ -46,5 +56,6 @@
 
 </body>
 </html>
+
 
 
